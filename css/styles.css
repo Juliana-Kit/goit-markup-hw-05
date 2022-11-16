@@ -58,6 +58,7 @@ a{
 }
 
 
+input,
 ul,
 p,
 h1,
@@ -314,6 +315,7 @@ img{
 
     margin: 0 auto;
 }
+
 
 
 /* Peculirities */
@@ -720,8 +722,8 @@ address{
 }
 
 .backdrop.is-hidden{
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden; */
+    /* opacity: 0; */
     pointer-events: none;
 
 }
@@ -763,13 +765,41 @@ address{
     justify-content: center;
 }
 
-/* .icon-close{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.form {
+    width: 100%;
+    outline: 2px solid #212121;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.form-fieled {
     
- 
-} */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-direction{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    color: var(--title-color);
+    margin: 0 auto;
+}
+
+.form-fieled label{
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+
 
                          /*             Portfolio              */           
 
