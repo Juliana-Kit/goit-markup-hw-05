@@ -928,7 +928,7 @@ address{
     border:1px solid var(--accent-color);
 }
 
-label.clause {
+.clause {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -950,51 +950,31 @@ label.clause {
     color: var(--accent-color);
 }
 
-.checkbox{
-    /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
 
-    
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-     
-}
 
 .icon-checkbox{
-    display: inline-block;
+    
     width: 16px;
     height: 15px;
     border:  2px solid #212121;
     border-radius: 2px;
     margin-right: 7px;
-    
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 
-.icon-check .checkbox:checked {
+ /* .icon-checkbox:checked {
     border-color: var(--accent-color);
     background-color: var(--accent-color) ;
     background-origin: border-box;
 
-}
-
-/* .checkbox:checked + .icon-checkbox{
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-    background-image: url(../images/icon-check.svg);
-    background-size: contain;
-    background-origin: border-box;
-
 } */
+
+.checkbox:checked + .clause > .icon-checkbox{
+    border: none;
+    background-color: var(--accent-color);
+}
 
 .btn-form{
     
